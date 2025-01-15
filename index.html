@@ -9,6 +9,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
@@ -354,6 +358,39 @@
         transform: translateY(-5px);
         box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
       }
+      #testimonials .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 15px;
+      }
+
+      #testimonials .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+      }
+
+      #testimonials .card-body {
+        position: relative;
+      }
+
+      #testimonials .rounded-circle {
+        border: 3px solid var(--primary-color);
+        padding: 3px;
+        transition: transform 0.3s ease;
+      }
+
+      #testimonials .card:hover .rounded-circle {
+        transform: scale(1.05);
+      }
+
+      #testimonials .text-warning {
+        color: var(--accent-color) !important;
+      }
+
+      #testimonials .card-text {
+        font-style: italic;
+        color: #555;
+        line-height: 1.6;
+      }
     </style>
   </head>
   <body>
@@ -362,7 +399,6 @@
       <div class="loading-spinner"></div>
     </div>
 
-    <!-- Scroll to Top Button -->
     <button type="button" class="scroll-top">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -372,7 +408,7 @@
         viewBox="0 0 16 16"
       >
         <path
-          d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"
+          d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"
         />
       </svg>
     </button>
@@ -503,6 +539,104 @@
                 <h5 class="card-title">Snacks</h5>
                 <p class="card-text">Wide variety of snacks and beverages</p>
                 <div class="product-price">Starting from $0.99</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">
+          What Our Customers Say
+        </h2>
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200"
+                    alt="Sarah Johnson"
+                    class="rounded-circle mx-auto"
+                    style="width: 100px; height: 100px; object-fit: cover"
+                  />
+                </div>
+                <div class="text-warning mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="card-text mb-3">
+                  "The fresh produce here is amazing! I love shopping at Toko Bu
+                  Dani for all my grocery needs. The staff is always helpful and
+                  friendly."
+                </p>
+                <h5 class="card-title mb-1">Sarah Johnson</h5>
+                <p class="text-muted small">Regular Customer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200"
+                    alt="Michael Chen"
+                    class="rounded-circle mx-auto"
+                    style="width: 100px; height: 100px; object-fit: cover"
+                  />
+                </div>
+                <div class="text-warning mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="card-text mb-3">
+                  "Great selection of local products and competitive prices. The
+                  store is always clean and well-organized. Highly recommended!"
+                </p>
+                <h5 class="card-title mb-1">Michael Chen</h5>
+                <p class="text-muted small">Loyal Customer</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="mb-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200"
+                    alt="Emily Rodriguez"
+                    class="rounded-circle mx-auto"
+                    style="width: 100px; height: 100px; object-fit: cover"
+                  />
+                </div>
+                <div class="text-warning mb-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="card-text mb-3">
+                  "I've been shopping here for years. The quality of their
+                  products and customer service is consistently excellent."
+                </p>
+                <h5 class="card-title mb-1">Emily Rodriguez</h5>
+                <p class="text-muted small">Family Shopper</p>
               </div>
             </div>
           </div>
